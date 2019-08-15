@@ -1,12 +1,14 @@
-{% set version = "0.2" %}
+{% set name = "amostra" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "52a34cf993ddc1367832f263b417eb4ed4f88214792acf86a4bd98c6cd5c3173" %}
 
 package:
-  name: amostra
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/nsls-ii/amostra
-  git_rev: v{{ version }}
+  url: https://github.com/NSLS-II/{{ name  }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
@@ -18,14 +20,15 @@ requirements:
     - python
     - pip
   run:
+    - python
     - doct
     - jsonschema
     - mongoquery
     - pymongo
+    - pyyaml
     - requests
     - tornado
     - ujson
-    - pyyaml
 
 test:
   imports:
