@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -33,19 +33,13 @@ requirements:
 test:
   imports:
     - amostra
-    - amostra.test
     - amostra.client
-    - amostra.server
     - amostra.sample_data
+    - amostra.server
+    - amostra.test
 
 about:
   home: https://nsls-ii.github.io/amostra
   license: BSD 3-Clause
   license_file: LICENSE
   summary: "amostra is a collection of light-weight sample management classes"
-
-extra:
-  recipe-maintainers:
-    - ericdill
-    - tacaswell
-    - licode
