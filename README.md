@@ -5,7 +5,7 @@ Home: https://nsls-ii.github.io/amostra
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: amostra is a collection of light-weight sample management classes
 
