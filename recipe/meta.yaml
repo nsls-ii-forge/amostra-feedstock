@@ -33,13 +33,11 @@ requirements:
 test:
   imports:
     - amostra
-    - amostra.client
-    - amostra.sample_data
-    - amostra.server
-    - amostra.test
 
 about:
   home: https://nsls-ii.github.io/amostra
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: amostra is a collection of light-weight sample management classes
+  dev_url: https://github.com/NSLS-II/amostra
+  doc_url: https://nsls-ii.github.io/amostra
