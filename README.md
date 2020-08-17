@@ -3,7 +3,7 @@ About amostra
 
 Home: https://nsls-ii.github.io/amostra
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD-3-Clause
 
